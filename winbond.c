@@ -17,25 +17,6 @@
 #define CMD_W25_WRSR		0x01	/* Write Status Register */
 #define CMD_W25_RES		0xab	/* Release from DP, and Read Signature */
 
-#define WINBOND_ID_W25X16		0x3015
-#define WINBOND_ID_W25X32		0x3016
-#define WINBOND_ID_W25X64		0x3017
-#define WINBOND_ID_W25Q32		0x4016
-#define WINBOND_ID_W25Q256		0x4019
-
-
-
-#define WINBOND_SR_WIP		(1 << 0)	/* Write-in-Progress */
-
-struct winbond_spi_flash_params {
-	uint16_t	id;
-	/* Log2 of page size in power-of-two mode */
-	uint8_t		l2_page_size;
-	uint16_t	pages_per_sector;
-	uint16_t	sectors_per_block;
-	uint16_t	nr_blocks;
-	const char	*name;
-};
 
 /* spi_flash needs to be first so upper layers can free() it */
 struct winbond_spi_flash {
