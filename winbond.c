@@ -15,13 +15,6 @@
 #define CMD_W25_WRDI		0x04	/* Write Disable */
 #define CMD_W25_RDSR		0x05	/* Read Status Register */
 #define CMD_W25_WRSR		0x01	/* Write Status Register */
-#define CMD_W25_READ		0x03	/* Read Data Bytes */
-#define CMD_W25_FAST_READ	0x0b	/* Read Data Bytes at Higher Speed */
-#define CMD_W25_PP		0x02	/* Page Program */
-#define CMD_W25_SE		0x20	/* Sector (4K) Erase */
-#define CMD_W25_BE		0xd8	/* Block (64K) Erase */
-#define CMD_W25_CE		0xc7	/* Chip Erase */
-#define CMD_W25_DP		0xb9	/* Deep Power-down */
 #define CMD_W25_RES		0xab	/* Release from DP, and Read Signature */
 
 #define WINBOND_ID_W25X16		0x3015
